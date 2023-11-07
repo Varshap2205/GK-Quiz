@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+  #num11{
+    font-size: 15px;
+  }
+
+</style>
+<body>
+    
+    
+    <div class="container">
+
+      <h1 style="width:100%;height:35px;border: 3px solid black;border-radius: 3px;padding: 5px;background-color: lightgreen;">Questions</h1>
+
+        <form action="/action.php">
+        <label style="width: 200px; background-color: lightblue; font-size: 20px;">Question number 1</label>
+        <p>What year did the Titanic sink in the Atlantic Ocean on 15 April, on its maiden voyage from Southampton?</p>
+          <input type="number" id="num1" class="form-control" placeholder="Answer here" style="width:100%;height:20px;border: 3px solid black;border-radius: 3px;padding: 5px;background-color: whitesmoke;">
+          <br>
+          <br>
+          <label  style="width: 200px; background-color: lightblue; font-size: 20px;">Question number 2</label>
+          <p> Which former Doctor Who actress played the part of Nebula in ‘Avengers:Infinity War’?</p>
+          <input type="text" id="num2" class="form-control" placeholder="Answer here" placeholder="Answer here" style="width:100%;height:20px;border: 3px solid black;border-radius: 3px;padding: 5px;background-color: whitesmoke;">
+          <br>
+          <br>
+          <label  style="width: 200px; background-color: lightblue; font-size: 20px;">Question number 3</label>
+          <p>Who invented the gramophone?</p>
+          <input type="text" id="num3" class="form-control" placeholder="Answer here" style="width:100%;height:20px;border: 3px solid black;border-radius: 3px;padding: 5px;background-color: whitesmoke;">
+          <br>
+          <br>
+          
+          <label  style="width: 200px; background-color: lightblue; font-size: 20px;">Question number 4</label>
+          <p>Which singer was known amongst other things as ‘The King of Pop’ and ‘The Gloved One’?</p>
+          
+          <input type="text" id="num4" class="form-control" placeholder="Answer here" style="width:100%;height:20px;border: 3px solid black;border-radius: 3px;padding: 5px;background-color: whitesmoke;">
+          <br>
+          <br>
+          <label  style="width: 200px; background-color: lightblue; font-size: 20px;">Question number 5</label>
+          <p>The end of the Second World War</p>
+          <input type="text" id="num5" class="form-control" placeholder="Answer here" style="width:100%;height:20px;border: 3px solid black;border-radius: 3px;padding: 5px;background-color: whitesmoke;">
+          <br>
+          <br>
+          <label  style="width: 200px; background-color: lightblue; font-size: 20px;">Question number 6</label>
+          <p>What is the doll, Barbie’s, full name?</p>
+          <input type="text" id="num6" class="form-control" placeholder="Answer here" style="width:100%;height:20px;border: 3px solid black;border-radius: 3px;padding: 5px;background-color: whitesmoke;">
+          <br>
+          <br>
+          <label  style="width: 200px; background-color: lightblue; font-size: 20px;">Question number 7</label>
+          <p>Who invented the tin can for preserving food in 1810?</p>
+          <input type="text"  id="num7" class="form-control" placeholder="Answer here" style="width:100%;height:20px;border: 3px solid black;border-radius: 3px;padding: 5px;background-color: whitesmoke;">
+          <br>
+          <br>
+          <label  style="width: 200px; background-color: lightblue; font-size: 20px;">Question number 8</label>
+          <p>Which club won the 1986 FA Cup final?</p>
+          <input type="text"  id="num8" class="form-control" placeholder="Answer here" style="width:100%;height:20px;border: 3px solid black;border-radius: 3px;padding: 5px;background-color: whitesmoke;">
+          <br>
+          <br>
+
+          <label  style="width: 200px; background-color: lightblue; font-size: 20px;">Question number 9</label>
+          <p>What is the name of the biggest technology company in South Korea?</p>
+          <input type="text"  id="num9" class="form-control"  placeholder="Answer here" style="width:100%;height:20px;border: 3px solid black;border-radius: 3px;padding: 5px;background-color: whitesmoke;">
+          <br>
+          <br>
+
+          <label  style="width: 200px; background-color: lightblue; font-size: 20px;">Question number 10</label>
+          <p>How many breaths does the human body take daily?</p>
+          <input type="number"  id="num10" class="form-control" placeholder="Answer here" style="width:100%;height:20px;border: 3px solid black;border-radius: 3px;padding: 5px;background-color: whitesmoke;">
+          <p id="num11" style="width:100%;height:20px;border: 3px solid black;border-radius: 3px;padding: 5px;background-color: whitesmoke; margin-top:15px;">
+
+        </form>
+          <br>
+          <br>
+
+          <button onclick="hi()" style="border: 3px solid black; border-radius: 10px; padding: 5px;background-color:lightpink;margin: 15px;height: 50px; width:100px; font-size: 20px; cursor:pointer;">My Score</button>
+          
+
+          <a href="http://127.0.0.1:5500/a.html" class="link">
+ 
+            <button onclick="ret()" id="v" style="border: 3px solid black; border-radius: 10px; padding: 5px;background-color:rgb(238, 96, 96);margin: 15px;height: 50px; width:100px; font-size: 20px; cursor:pointer;">Try Again</button>
+            </a>
+           
+        
+          
+
+          <script type="text/javascript">
+
+            function hi(){
+              let sum=0;
+              
+              let n1=parseInt(document.getElementById('num1').value);
+              let n2=document.getElementById('num2').value;
+              let n3=document.getElementById('num3').value;
+              let n4=document.getElementById('num4').value;
+              let n5=parseInt(document.getElementById('num5').value);
+              let n6=document.getElementById('num6').value;
+              let n7=document.getElementById('num7').value;
+              let n8=document.getElementById('num8').value;
+              let n9=document.getElementById('num9').value;
+              let n10=parseInt(document.getElementById('num10').value);
+
+              
+
+
+              if(n1==1912){
+                sum=sum+1;
+              }
+              if((n2=="Karren Gillan")||(n2=="karren gillan")||(n2=="KARREN GILLAN")){
+                sum=sum+1;
+              }
+
+              if((n3=="Emile Berliner")||(n3=="emile berliner")||(n3=="EMILE BERLINER")){
+                sum=sum+1;
+              }
+              if((n4=="Michel Jackson")||(n4=="michel jackson")||(n4=="MICHEL JACKSON")){
+                sum=sum+1;
+              }
+              if(n5==1945){
+                sum=sum+1;
+              }
+              if((n6=="Barbara Millicent Roberts")||(n6=="barbara millicent roberts")||(n6=="BARBARA MILLICENT ROBERTS")){
+                sum=sum+1;
+              }
+              if((n7=="Peter Durand")||(n7=="peter durand")||(n7=="PETER DURAND")){
+                sum=sum+1;
+              }
+              if((n8=="Liverpool")||(n8=="liverpool")||(n8=="LIVERPOOL")){
+                sum=sum+1;
+              }
+              if((n9=="Samsung")||(n9=="samsung")||(n9=="SAMSUNG")){
+                sum=sum+1;
+              }
+              if(n10==20000){
+                sum=sum+1;
+              }
+              if(sum<=5){
+                num11.style.color="red";
+
+              }
+              else{
+                num11.style.color="green";
+                
+              }
+              document.getElementById('num11').innerHTML="You Scored "+sum+"/10";
+              let btnclear=document.querySelector('#v');
+                let inputs=document.querySelectorAll('input');
+                let a=document.querySelectorAll("p");
+                btnclear.addEventListener('click',()=>{
+                inputs.forEach(input=>input.value='');
+          
+                document.getElementById('num11').innerHTML='';
+        });
+            }
+
+              function ret(){
+
+                let btnclear=document.querySelector('#v');
+                let inputs=document.querySelectorAll('input');
+                let a=document.querySelectorAll("p");
+                btnclear.addEventListener('click',()=>{
+                inputs.forEach(input=>input.value='');
+          
+                document.getElementById('num11').innerHTML='';
+        });
+      }
+            
+         
+
+              
+          
+          </script>   
+</body>
+</html>
